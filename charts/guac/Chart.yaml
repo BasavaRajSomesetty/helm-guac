@@ -1,0 +1,18 @@
+# Copyright Kusari, Inc. and contributors
+apiVersion: v2
+name: guac
+description: A Helm chart for deploying GUAC to Kubernetes
+
+maintainers:
+  - name: kusaridev
+    url: https://github.com/kusaridev/guac-helm-charts
+    email: guac-info@kusari.dev
+
+type: application
+version: 0.1.5
+appVersion: "v0.1.0"
+
+dependencies:
+- name: nats
+  version: "~0.19.12"
+  repository: "https://nats-io.github.io/k8s/helm/charts/"
